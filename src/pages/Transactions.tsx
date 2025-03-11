@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import TransactionForm from '../components/shared/TransactionForm';
 import TransactionList from '../components/shared/TransactionList';
 import { saveTransactions, getTransactions } from '../lib/localStorageUtils';

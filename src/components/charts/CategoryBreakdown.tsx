@@ -23,7 +23,7 @@ const CategoryBreakdown = ({ transactions }: CategoryBreakdownProps) => {
     <ResponsiveContainer width="100%" height={300}>
       <PieChart>
         <Pie data={data} dataKey="value" nameKey="name" innerRadius={50} outerRadius={80} paddingAngle={5}>
-          {data.map((entry, index) => (
+          {data.map((_, index) => (
             <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
           ))}
         </Pie>

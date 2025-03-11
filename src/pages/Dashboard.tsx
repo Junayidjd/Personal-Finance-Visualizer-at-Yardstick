@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import MonthlyExpensesChart from '../components/charts/MonthlyExpensesChart';
+// import MonthlyExpensesChart from '../components/charts/MonthlyExpensesChart';
 import BudgetComparisonChart from '../components/charts/BudgetComparisonChart';
 import BalanceCard from '../components/ui/BalanceCard';
 import BudgetForm from '../components/shared/BudgetForm';
@@ -16,7 +16,7 @@ export default function Dashboard() {
     { category: 'Entertainment', budgeted: 200, actual: 250 },
   ]);
 
-  const [transactions, setTransactions] = useState([
+  const [transactions] = useState([
     { id: 1, amount: 100, description: 'Groceries', date: '2023-10-01', category: 'Groceries' },
     { id: 2, amount: 200, description: 'Rent', date: '2023-10-05', category: 'Rent' },
     { id: 3, amount: 50, description: 'Entertainment', date: '2023-10-10', category: 'Entertainment' },
