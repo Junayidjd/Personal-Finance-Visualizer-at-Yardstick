@@ -1,54 +1,85 @@
-# React + TypeScript + Vite
+Expense Tracker Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **Introduction**  
+The **Expense Tracker Application** is a React-based web application designed to help users manage their expenses efficiently. It allows users to track transactions, categorize expenses, and set budgets. The app is built using **React**, **TypeScript**, **Vite**, and **Charts.js** for data visualization. The project is divided into three stages, each adding more advanced features.
 
-Currently, two official plugins are available:
+📌 **Live Demo**  
+🔗 [Expense Tracker Live Demo](https://your-deployment-url.com)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+✨ **Features**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Stage 1: Basic Transaction Tracking
+- **Add/Edit/Delete transactions**: Users can add, edit, or delete transactions with details like amount, date, and description.
+- **Transaction list view**: View all transactions in a list format.
+- **Monthly expenses bar chart**: Visualize monthly expenses using a bar chart.
+- **Basic form validation**: Ensure valid data entry for transactions.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Stage 2: Categories
+- **Predefined categories**: Assign transactions to predefined categories.
+- **Category-wise pie chart**: Visualize expenses by category using a pie chart.
+- **Dashboard**: Includes summary cards for total expenses, category breakdown, and most recent transactions.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Stage 3: Budgeting
+- **Set monthly category budgets**: Define budgets for each category.
+- **Budget vs actual comparison chart**: Compare actual spending against the budget.
+- **Simple spending insights**: Get insights into spending patterns.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+⚙️ **Installation**
+
+### Prerequisites
+Ensure you have the following installed:
+- **Node.js** (v16 or higher)
+- **npm** or **yarn**
+
+### Steps to Install & Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/expense-tracker.git
+   cd expense-tracker
+   ```
+
+2. Install dependencies:
+   Using npm:
+   ```bash
+   npm install
+   ```
+   Or using yarn:
+   ```bash
+   yarn install
+   ```
+
+3. Start the development server:
+   Using npm:
+   ```bash
+   npm run dev
+   ```
+   Or using yarn:
+   ```bash
+   yarn dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+🛠️ **Dependencies**
+
+The project uses the following dependencies:
+
+```json
+"dependencies": {
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0",
+  "typescript": "^5.0.0",
+  "vite": "^4.0.0",
+  "chart.js": "^4.0.0",
+  "react-chartjs-2": "^5.0.0",
+  "tailwindcss": "^3.0.0",
+  "eslint": "^8.0.0"
+}
 ```
