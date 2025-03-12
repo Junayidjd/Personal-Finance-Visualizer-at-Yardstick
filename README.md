@@ -4,7 +4,7 @@ Expense Tracker Application
 The **Expense Tracker Application** is a React-based web application designed to help users manage their expenses efficiently. It allows users to track transactions, categorize expenses, and set budgets. The app is built using **React**, **TypeScript**, **Vite**, and **Charts.js** for data visualization. The project is divided into three stages, each adding more advanced features.
 
 📌 **Live Demo**  
-🔗 [Expense Tracker Live Demo](https://your-deployment-url.com)  
+🔗 [Expense Tracker Live Demo](https://personal-finance-visualizer-at-yardstick-d8w3.vercel.app/ )  
 
 ---
 
