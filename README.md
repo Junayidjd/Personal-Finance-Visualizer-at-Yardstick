@@ -8,6 +8,13 @@ The **Expense Tracker Application** is a React-based web application designed to
 
 ---
 
+### 🏠 Home Page
+Home page with content and an image below the text.
+
+![image](![image](https://github.com/user-attachments/assets/a125b24b-9228-4bf7-8696-5cd0b9c6aa5d)
+)
+
+
 ✨ **Features**
 
 ### Stage 1: Basic Transaction Tracking
